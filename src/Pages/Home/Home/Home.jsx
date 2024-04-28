@@ -1,8 +1,12 @@
+import AboutUs from "../AboutUs/AboutUs";
+import Benner from "../Benner/Benner";
 
 const Home = () => {
     return (
         <div>
-            <h1 className="mb-96">this is home</h1>
+            <Benner ></Benner>
+            <AboutUs></AboutUs>
+           
         </div>
     );
 };

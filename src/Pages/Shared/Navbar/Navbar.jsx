@@ -1,22 +1,28 @@
+import Header from "../Header";
+
 
 const Navbar = () => {
 
     const navOption =
         <>
-            <li><a>Item </a></li>
+            <li><a>Home</a></li>
             <li>
                 <details>
-                    <summary>Parent</summary>
+                    <summary>More</summary>
                     <ul className="p-2">
-                        <li><a>Submenu </a></li>
-                        <li><a>Submenu </a></li>
+                        <li><a>About</a></li>
+                        <li><a>Blogs</a></li>
                     </ul>
                 </details>
             </li>
-            <li><a>Item 3</a></li>
+            <li><a>Services</a></li>
+            <li><a>Projects</a></li>
+
+            <li><a>Contact Us</a></li>
         </>
     return (
         <>
+            <Header></Header>
             <div className="navbar bg-base-100">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -27,7 +33,7 @@ const Navbar = () => {
                             {navOption}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost font-bold text-xl">Primium</a>
+                    <a className="btn btn-ghost  btn btn-outline btn-accent bg-black font-bold text-xl">Donate Us</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -35,7 +41,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn">Button</a>
+                    <a className="font-bold text-xl btn btn-outline btn-accent bg-black ">Login</a>
                 </div>
             </div>
         </>
