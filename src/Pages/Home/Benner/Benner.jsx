@@ -96,7 +96,9 @@ const Benner = () => {
 
             </div>
             <div>
-                <img className="rounded-lg" src="https://img.freepik.com/free-photo/3d-rendering-classic-interior_23-2150943461.jpg?t=st=1714111918~exp=1714115518~hmac=00a42cabfdb0826d03879da902b58ed4079cc6dcbdef4cce0dabe04be2a02d70&w=1060" alt="" />
+                <img className="rounded-lg" src="https://img.freepik.com/free-photo/3d-rendering-
+                classic-interior_23-2150943461.jpg?t=st=1714111918~exp=1714115518~hmac=00a42cabfd
+                b0826d03879da902b58ed4079cc6dcbdef4cce0dabe04be2a02d70&w=1060" alt="" />
                 <p className="legend  font-bold">Our Library</p>
 
                 <div className="absolute flex   transform -translate-y-1/2   bottom-1/2 ml-32 mb-10 ">

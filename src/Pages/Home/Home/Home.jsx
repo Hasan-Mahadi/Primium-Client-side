@@ -7,6 +7,7 @@ const Home = () => {
             <Benner ></Benner>
             <AboutUs></AboutUs>
            
+           
         </div>
     );
 };
