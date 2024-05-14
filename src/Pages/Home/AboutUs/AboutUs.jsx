@@ -176,10 +176,10 @@ justify-center items-center opacity-0 hover:opacity-100 transition-opacity durat
                     </div>
 
                     <a className="btn btn-ghost  btn btn-outline btn-accent 
-                 font-bold mt-5  ">Read More</a>
+                    font-bold mt-5  ">Read More</a>
 
                     <a className="btn btn-ghost  btn btn-outline btn-accent
-                 ml-12 mb-5 font-bold mt-5 ml-5 ">Join Us Now</a>
+                    ml-12 mb-5 font-bold mt-5 ml-5 ">Join Us Now</a>
 
                 </div>
 
