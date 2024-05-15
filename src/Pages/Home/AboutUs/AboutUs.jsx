@@ -24,17 +24,17 @@ const AboutUs = () => {
                     <div className="flex gap-2 ">
 
 
-                        <div className="card card-compact w-60 bg-base-100 shadow-xl max-w-sm rounded-xl hover:text-7xl
-transform hover:scale-110  transition delay-150 duration-300 
-ease-in-outoverflow-hidden" >
+                        <div className="card card-compact w-60 bg-base-100    shadow-xl max-w-sm rounded-xl hover:text-7xl
+                             transform hover:scale-110  transition delay-150 duration-300 
+                                 ease-in-outoverflow-hidden" >
 
                             <figure><img className="rounded-xl " src="
-                https://img.freepik.com/free-photo/view-famous-abu-dhabi-sheikh-zayed-mosque-by-night
- -uae_268835-1065.jpg?t=st=1714323156~exp=1714326756~hmac=fde55c58a24aef2381a347944
- 07d053e678810cabf64093edaa839f1af3ae30e&w=996" alt="Shoes" />
+                                https://img.freepik.com/free-photo/view-famous-abu-dhabi-sheikh-zayed-mosque-by-night
+                           -uae_268835-1065.jpg?t=st=1714323156~exp=1714326756~hmac=fde55c58a24aef2381a347944
+                            07d053e678810cabf64093edaa839f1af3ae30e&w=996" alt="Shoes" />
 
                                 <div className="absolute rounded-xl inset-0 bg-black bg-opacity-50 text-white flex 
-justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-500">
+                                     justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-500">
                                     <p className="text-xl">Mosque-1</p>
                                 </div>
                             </figure>
@@ -44,8 +44,8 @@ justify-center items-center opacity-0 hover:opacity-100 transition-opacity durat
 
                         </div>
                         <div className="card card-compact w-60 bg-base-100 shadow-xl max-w-sm rounded-xl hover:text-7xl
-transform hover:scale-110  transition delay-150 duration-300 
-ease-in-outoverflow-hidden">
+                              transform hover:scale-110  transition delay-150 duration-300 
+                               ease-in-outoverflow-hidden">
 
                             <figure><img className="rounded-xl  " src="https://img.freepik.com/free-psd/
         mosque-building-isolated_23-2151388951.jpg?t=st=1715427183~exp=1715430783~hmac
