@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 const Dua = () => {
 
@@ -20,12 +21,21 @@ const Dua = () => {
                         some form, by injected humour, <br /> or randomised words but
                         the majority have suffered alteration in some form...</p>
                     <div className="ml-20">
-                        <a className="btn btn-ghost bg-black btn btn-outline 
-                              btn-accent 
-                                  font-bold mt-5  ">Read More</a>
-                        <a className="btn btn-ghost bg-black  btn btn-outline 
-                          btn-accent
-                                ml-12 mb-5 font-bold mt-5 ml-5 ">Contact Us</a>
+
+
+
+                        <Link to='blogs'>
+                            <a className="btn btn-ghost  btn btn-outline 
+       btn-accent 
+ bg-black font-bold mt-5  ">Read More</a>
+                        </Link>
+
+                        <Link to='contact'>
+                            <a className="btn btn-ghost  btn btn-outline 
+btn-accent 
+            bg-black font-bold mt-5 ml-5 ">Contact Us</a>
+                        </Link>
+
                     </div>
                 </div>
 

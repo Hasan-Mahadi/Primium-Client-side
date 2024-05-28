@@ -1,24 +1,34 @@
+import { Link, NavLink } from "react-router-dom";
 import Header from "../Header";
+import './Navbar.css';
 
 
 const Navbar = () => {
 
     const navOption =
         <>
-            <li><a>Home</a></li>
             <li>
-                <details>
-                    <summary>More</summary>
-                    <ul className="p-2">
-                        <li><a>About</a></li>
-                        <li><a>Blogs</a></li>
-                    </ul>
-                </details>
-            </li>
-            <li><a>Services</a></li>
-            <li><a>Projects</a></li>
 
-            <li><a>Contact Us</a></li>
+            <NavLink to="/"
+                title='abouts' className={({ isActive }) =>
+                        (isActive ? 'text-blue-700' : '')}  ><p className="font-bold">Home</p></NavLink>
+            </li>
+
+            <li>
+
+
+                <ul className=" flex">
+                    <li className="font-bold"><Link to="/services">Services</Link></li>
+                    <li className="font-bold"><Link to="about">About</Link></li>
+                    <li className="font-bold"><Link to="blogs">Blogs</Link></li>
+                </ul>
+
+            </li>
+
+            <li className="font-bold"><Link to="projects">Projects</Link></li>
+            <li className="font-bold"><Link to="contact">Contact</Link></li>
+
+
         </>
     return (
         <>
@@ -33,7 +43,11 @@ const Navbar = () => {
                             {navOption}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost  btn btn-outline btn-accent bg-black font-bold text-xl">Donate Us</a>
+                    <Link to='donats'>
+                        
+                        <a className="btn btn-ghost  btn btn-outline btn-accent 
+                            bg-black font-bold text-xl">Donate Us</a>
+                    </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -41,7 +55,10 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="font-bold text-xl btn btn-outline btn-accent bg-black ">Login</a>
+                    <Link to='logins'> 
+                    <a className="font-bold text-xl btn btn-outline btn-accent 
+                    bg-black ">Login</a>
+                    </Link>
                 </div>
             </div>
         </>

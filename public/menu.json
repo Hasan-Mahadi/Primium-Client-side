@@ -1,0 +1,63 @@
+[
+    {
+        "_id": "642c155b2c4774f05c36eeaa",
+        "name": "QURAN CLASS",
+        "time": "Timing : 09:00 A.M - 03:00 P.M",
+        "image": "http://kodeforest.net/html/islamic/extra-images/service.jpg",
+        "category": "salad",
+        "text": "Read Quran, know Allah!!!",
+        "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolorum maiores soluta veritatis vel illo aut rem? Nulla reprehenderit cum aliquid eos! Voluptates quisquam nihil saepe qui ad quia sed.",
+        "price": 14.7
+    },
+    
+    {
+        "_id": "642c155b2c4774f05c36eeb9",
+        "name": "COUNSELLING",
+        "time": "Timing : 07:00 A.M - 03:00 P.M",
+        "image": "https://ahmadullah.info/site/contents/cropped/1190x512x1x100xffffffx0/img_404f3.jpg",
+        "category": "drinks",
+        "text": "Take best Counselling...",
+        "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolorum maiores soluta veritatis vel illo aut rem? Nulla reprehenderit cum aliquid eos! Voluptates quisquam nihil saepe qui ad quia sed.",
+        "price": 14.7
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee7c",
+        "name": "NIKAH SERVICES",
+        "time": "Timing : 06:00 A.M - 06:00 P.M",
+        "image": "https://i0.wp.com/icsta.org.uk/wp-content/uploads/2020/01/Matrimonial-Service-Islamic-Centre-1.jpg?fit=870%2C400&ssl=1",
+        "category": "popular",
+        "text": "Take Nikah Services...",
+        "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolorum maiores soluta veritatis vel illo aut rem? Nulla reprehenderit cum aliquid eos! Voluptates quisquam nihil saepe qui ad quia sed.",
+        "price": 14.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee88",
+        "name": "HADITH SCHOOL",
+        "time": "Timing : 09:00 A.M - 03:00 P.M",
+        "image": "http://kodeforest.net/html/islamic/extra-images/service3.jpg",
+        "category": "dessert",
+        "text": "Know the hadith, invite...",
+        "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolorum maiores soluta veritatis vel illo aut rem? Nulla reprehenderit cum aliquid eos! Voluptates quisquam nihil saepe qui ad quia sed.",
+        "price": 12.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee7a",
+        "name": "FUNERAL SERVICES",
+        "time": "Timing : 08:00 A.M - 03:00 P.M",
+        "image": "http://kodeforest.net/html/islamic/extra-images/service4.jpg",
+        "category": "popular",
+        "text": "Take Funeral Services...",
+        "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolorum maiores soluta veritatis vel illo aut rem? Nulla reprehenderit cum aliquid eos! Voluptates quisquam nihil saepe qui ad quia sed.",
+        "price": 14.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee8c",
+        "name": "OUR ACADEMIS",
+        "time": "Timing : 09:00 A.M - 05:00 P.M",
+        "image": "http://kodeforest.net/html/islamic/extra-images/service5.jpg",
+        "category": "dessert",
+        "text": "About More...",
+        "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolorum maiores soluta veritatis vel illo aut rem? Nulla reprehenderit cum aliquid eos! Voluptates quisquam nihil saepe qui ad quia sed.",
+        "price": 12.5
+    }
+]

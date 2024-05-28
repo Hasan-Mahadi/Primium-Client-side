@@ -1,15 +1,19 @@
 .full-page-bg1 {
-    background-image: url('https://img.freepik.com/free-vector/realistic-paper-style-abstract-ornamental-background_79603-2435.jpg?t=st=1709746207~exp=1709749807~hmac=619cf8d81f6a50791a2d92f8a094640f020195657354a8d64951cbb7e917aaf5&w=996');
-    background-size: cover;
-    
-   position: relative;
-   
-   
-    background-position: center top ;
-    background-position:inherit ;
-    background-repeat: no-repeat;
-    height:18vh;
-    width: 100%;
-     /* Set the height to cover the full viewport height */
-    /* Remove default padding to cover the entire page */
-  }
+  background-image: url('https://img.freepik.com/free-vector/realistic-paper-style-abstract-ornamental-background_79603-2435.jpg?t=st=1709746207~exp=1709749807~hmac=619cf8d81f6a50791a2d92f8a094640f020195657354a8d64951cbb7e917aaf5&w=996');
+  background-size: cover;
+
+  position: relative;
+
+  /* z-index: 100; */
+  /* position: sticky; */
+  /* top: 0; */
+
+  height: 11vh;
+  background-position: center top;
+  background-position: inherit;
+  background-repeat: no-repeat;
+  height: 12vh;
+  width: 100%;
+  /* Set the height to cover the full viewport height */
+  /* Remove default padding to cover the entire page */
+}

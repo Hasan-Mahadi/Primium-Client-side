@@ -3,9 +3,16 @@ import React, { useEffect } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { FaArrowRight, FaClock } from 'react-icons/fa';
-
+import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 
 const Services = () => {
+
+
+
+
+
+
 
     useEffect(() => {
         Aos.init({ duration: 2000 });
@@ -16,19 +23,31 @@ const Services = () => {
 
 
         <section>
+            <Helmet>
+                <title>Islamic Center | Services</title>
+            </Helmet>
 
             <h1 className="text-center font-bold text-4xl italic mt-28  mb-14" data-aos="flip-left">
                 <img className='mx-auto pb-1' src="http://kodeforest.net/html/islamic/images/hdg-img.png"
                     alt="" />
-                OUR SERVICES</h1>
+                    OUR SERVICES</h1>
+
+
+
+
 
 
 
             <div className='flex gap-20 center ml-52' >
 
+
+
+
+
+
                 <div className=' hover:text-9xl  transform 
-hover:scale-110  transition
- delay-150 duration-200  max-w-sm '>
+                   hover:scale-110  transition
+                       delay-150 duration-200  max-w-sm '>
 
                     <div className="card card-compact w-64 h-80 bg-base-100  hover:text-9xl shadow-xl transform hover:scale-110  transition delay-150 duration-200  max-w-sm" data-aos="zoom-in-right">
                         <figure><img className='' src="http://kodeforest.net/html/islamic/extra-images/service.jpg" alt="Shoes" /></figure>
@@ -41,7 +60,7 @@ hover:scale-110  transition
                                 <p className='mr-2'> Timing : 09:00 A.M - 03:00 P.M</p>
                             </div>
                             <div className="card-actions justify-end pt-10">
-                                <p className='font-bold'>Read Quran, know Allah...</p>  <  FaArrowRight />
+                                <p className='font-bold'>Read Quran, know Allah...</p> <Link to="/prodcust" className='btn-outline  btn-ghost'> <  FaArrowRight /></Link>
                             </div>
 
 
@@ -68,18 +87,14 @@ hover:scale-110  transition
                             </div>
                             <div className="card-actions justify-end pt-10">
                                 <p className='font-bold'>Take best Counselling...</p>
-                                <  FaArrowRight />
+                                <Link to="/prodcust" className='btn-outline  
+                                    btn-ghost'> <  FaArrowRight /></Link>
                             </div>
 
                         </div>
                     </div>
                 </div>
-
-
-
-
-
-
+                
                 <div className=' hover:text-9xl  transform 
 hover:scale-110  transition
  delay-150 duration-200  max-w-sm '>
@@ -102,7 +117,8 @@ shadow-xl"data-aos="zoom-in-right">
                             </div>
                             <div className="card-actions justify-end pt-10">
                                 <p className='font-bold'>Take Nikah Services...</p>
-                                <  FaArrowRight />
+                                <Link to="/prodcust" className='btn-outline  
+                                   btn-ghost'> <  FaArrowRight /></Link>
                             </div>
 
                         </div>
@@ -139,8 +155,9 @@ shadow-xl"data-aos="zoom-in-left">
                                 <p className='mr-2'> Timing : 07:00 A.M - 04:00 P.M</p>
                             </div>
                             <div className="card-actions justify-end pt-10">
-                                <p className='font-bold'>Know the hadith, invite...</p>
-                                <  FaArrowRight />
+                                <p className='font-bold'>Know the hadith, invite...</p> <Link to="/prodcust" className='btn-outline  
+                                   btn-ghost'> <  FaArrowRight /></Link>
+
                             </div>
 
                         </div>
@@ -167,7 +184,8 @@ shadow-xl"data-aos="zoom-in-right">
                             </div>
                             <div className="card-actions justify-end pt-10">
                                 <p className='font-bold'>Take Funeral Services...</p>
-                                <  FaArrowRight />
+                                <Link to="/prodcust" className='btn-outline  
+                                    btn-ghost'> <  FaArrowRight /></Link>
                             </div>
 
                         </div>
@@ -197,7 +215,8 @@ extra-images/service5.jpg" alt="Shoes" /></
                             </div>
                             <div className="card-actions justify-end pt-10">
                                 <p className='font-bold'>About More...</p>
-                                <  FaArrowRight />
+                                <Link to="/prodcust" className='btn-outline  
+                                      btn-ghost'> <  FaArrowRight /></Link>
                             </div>
                         </div>
                     </div>

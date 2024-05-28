@@ -1,5 +1,6 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
+import { Link } from "react-router-dom";
 
 const Benner = () => {
     return (
@@ -20,9 +21,16 @@ const Benner = () => {
 
                         <p className=" font-bold "> Return To Allah, Return To The Eternal Paradise ! </p>
 
-                        <a className="btn btn-ghost  btn btn-outline btn-accent bg-black font-bold mt-5  ">Read More</a>
+                        <Link to='blogs'>
+                            <a className="btn btn-ghost  btn btn-outline 
+                               btn-accent 
+                         bg-black font-bold mt-5  ">Read More</a>
+                        </Link>
 
-                        <a className="btn btn-ghost  btn btn-outline btn-accent bg-black font-bold mt-5 ml-5 ">Contact Us</a>
+                        <Link to='contact'>
+                            <a className="btn btn-ghost  btn btn-outline btn-accent 
+                                 bg-black font-bold mt-5 ml-5 ">Contact Us</a>
+                        </Link>
 
 
 
@@ -54,9 +62,16 @@ const Benner = () => {
 
                         <p className=" font-bold "> Return To Allah, Return To The Eternal Paradise ! </p>
 
-                        <a className="btn btn-ghost  btn btn-outline btn-accent bg-black font-bold mt-5  ">Read More</a>
+                        <Link to='blogs'>
+                            <a className="btn btn-ghost  btn btn-outline 
+btn-accent 
+     bg-black font-bold mt-5  ">Read More</a>
+                        </Link>
 
-                        <a className="btn btn-ghost  btn btn-outline btn-accent bg-black font-bold mt-5 ml-5 ">Contact Us</a>
+                        <Link to='contact'>
+                            <a className="btn btn-ghost  btn btn-outline btn-accent 
+                                    bg-black font-bold mt-5 ml-5 ">Contact Us</a>
+                        </Link>
 
 
 
@@ -82,9 +97,17 @@ const Benner = () => {
 
                         <p className=" font-bold "> Return To Allah, Return To The Eternal Paradise ! </p>
 
-                        <a className="btn btn-ghost  btn btn-outline btn-accent bg-black font-bold mt-5  ">Read More</a>
+                        <Link to='blogs'>
+                            <a className="btn btn-ghost  btn btn-outline 
+btn-accent 
+     bg-black font-bold mt-5  ">Read More</a>
+                        </Link>
 
-                        <a className="btn btn-ghost  btn btn-outline btn-accent bg-black font-bold mt-5 ml-5 ">Contact Us</a>
+                        <Link to='contact'>
+                            <a className="btn btn-ghost  btn btn-outline 
+btn-accent 
+            bg-black font-bold mt-5 ml-5 ">Contact Us</a>
+                        </Link>
 
 
 
@@ -111,9 +134,17 @@ const Benner = () => {
 
                         <p className=" font-bold "> Return To Allah, Return To The Eternal Paradise ! </p>
 
-                        <a className="btn btn-ghost  btn btn-outline btn-accent bg-black font-bold mt-5  ">Read More</a>
+                        <Link to='blogs'>
+                            <a className="btn btn-ghost  btn btn-outline 
+btn-accent 
+     bg-black font-bold mt-5  ">Read More</a>
+                        </Link>
 
-                        <a className="btn btn-ghost  btn btn-outline btn-accent bg-black font-bold mt-5 ml-5 ">Contact Us</a>
+                        <Link to='contact'>
+                            <a className="btn btn-ghost  btn btn-outline 
+btn-accent 
+            bg-black font-bold mt-5 ml-5 ">Contact Us</a>
+                        </Link>
 
 
 
@@ -138,12 +169,19 @@ const Benner = () => {
 
                         <p className=" font-bold "> Return To Allah, Return To The Eternal Paradise ! </p>
 
-                        <a className="btn btn-ghost  btn btn-outline btn-accent bg-black font-bold mt-5  ">Read More</a>
+                        <Link to='blogs'>
+                            <a className="btn btn-ghost  btn btn-outline btn-accent 
+                             bg-black font-bold mt-5  ">Read More</a>
+                        </Link>
 
-                        <a className="btn btn-ghost  btn btn-outline btn-accent bg-black font-bold mt-5 ml-5 ">Contact Us</a>
+                        <Link to='contact'>
+                            <a className="btn btn-ghost  btn btn-outline 
+btn-accent 
+            bg-black font-bold mt-5 ml-5 ">Contact Us</a>
+                        </Link>
 
 
-
+                       
 
                     </div>
 

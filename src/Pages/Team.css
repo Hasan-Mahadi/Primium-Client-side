@@ -1,0 +1,26 @@
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+    color: #f1f1f1; /* White text color */
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
