@@ -9,9 +9,10 @@ import Blogs from "../Pages/Blogs";
 import Projects from "../Pages/Projects";
 import Contact from "../Pages/Contact";
 import Donate from "../Pages/Donate";
-import Login from "../Pages/Login";
-import AllServic from "../Pages/Shared/Allservic/AllServic";
+
 import Products from "../Pages/Products";
+import Login from "../Pages/Login/Login";
+import SignUp from "../Pages/SingUp/SignUp";
 
 
   export const router = createBrowserRouter([
@@ -51,7 +52,11 @@ import Products from "../Pages/Products";
          
         {
           path: 'logins',
-          element: < Login></Login>
+          element: <Login></Login>
+        },
+        {
+          path: 'signup',
+          element: <SignUp></SignUp>
         },
         {
           path: 'prodcust',

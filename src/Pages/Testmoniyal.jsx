@@ -13,7 +13,7 @@ const Testmoniyal = () => {
 
     const [Testmoniyal, setTestmoniyal] = useState([]);
     useEffect(() => {
-        fetch('testmoniyal.json')
+        fetch('http://localhost:5000/reviews')
             .then(res => res.json())
             .then(data => setTestmoniyal(data))
     }, [])

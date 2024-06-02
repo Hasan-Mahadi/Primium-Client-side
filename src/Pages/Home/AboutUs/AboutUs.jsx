@@ -16,13 +16,13 @@ const AboutUs = () => {
     return (
         <section>
 
-            <div className="flex mt-28">
+            <div className="flex mt-28 ">
 
 
 
-                <div className="mb-5 ml-32" data-aos="flip-left">
+                <div className="mb-5 ml-32 " data-aos="flip-left">
 
-                    <div className="flex gap-2 ">
+                    <div className="gap-2 grid md:grid-cols-3 ">
 
 
                         <div className="card card-compact w-60 bg-base-100    shadow-xl max-w-sm rounded-xl hover:text-7xl
@@ -48,10 +48,10 @@ justify-center items-center opacity-0 hover:opacity-100 transition-opacity durat
                                ease-in-outoverflow-hidden">
 
                             <figure><img className="rounded-xl h-48 " src="https://img.freepik.com/free-psd/
-mosque-building-isolated_23-2151388951.jpg?t=st=1715427183~exp=1715430783~hmac=2d2b68bdd67164be2691ed089e486b53ab7995f20fa6525fff7a7b4df7d27ce2&w=996" alt="Shoes" />
+                                       mosque-building-isolated_23-2151388951.jpg?t=st=1715427183~exp=1715430783~hmac=2d2b68bdd67164be2691ed089e486b53ab7995f20fa6525fff7a7b4df7d27ce2&w=996" alt="Shoes" />
 
                                 <div className="absolute rounded-xl inset-0 bg-black bg-opacity-50 text-white flex 
-justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-500">
+                                  justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-500">
                                     <p className="text-xl">Mosque-2</p>
                                 </div>
 
@@ -101,7 +101,7 @@ justify-center items-center opacity-0 hover:opacity-100 transition-opacity durat
                 </div>
 
 
-                <div className="ml-20" data-aos="flip-right">
+                <div className="ml-20 " data-aos="flip-right">
                     <h1 className="font-bold text-2xl underline text-black   ">About Us...</h1>
                     <p className="italic mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         <br />  Perferendis fuga perspiciatis quia facere nam harum recusandae aut, <br />
