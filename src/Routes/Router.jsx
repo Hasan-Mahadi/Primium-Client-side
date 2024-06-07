@@ -13,6 +13,8 @@ import Donate from "../Pages/Donate";
 import Products from "../Pages/Products";
 import Login from "../Pages/Login/Login";
 import SignUp from "../Pages/SingUp/SignUp";
+import Secret from "../Pages/Shared/secret/Secret";
+import PriveteRoutse from "./PriveteRoutse";
 
 
   export const router = createBrowserRouter([
@@ -26,7 +28,7 @@ import SignUp from "../Pages/SingUp/SignUp";
         },
         {
           path:'services',
-          element: <Services></Services>
+          element: <PriveteRoutse><Services></Services></PriveteRoutse>
         },
         {
           path: 'about',
@@ -60,7 +62,11 @@ import SignUp from "../Pages/SingUp/SignUp";
         },
         {
           path: 'prodcust',
-          element: <Products></Products>
+          element: <PriveteRoutse><Products></Products></PriveteRoutse>
+        },
+        {
+          path: 'secret',
+          element: <PriveteRoutse><Secret></Secret></PriveteRoutse>
         }
       ]
     },

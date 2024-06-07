@@ -1,9 +1,10 @@
 import Aos from "aos";
-import { useContext, useEffect, useRef, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
-import { loadCaptchaEnginge, LoadCanvasTemplate, LoadCanvasTemplateNoReload, validateCaptcha } from 'react-simple-captcha';
+import { loadCaptchaEnginge, LoadCanvasTemplate, validateCaptcha } from 'react-simple-captcha';
 import { AuthContext } from "../../providers/Authproviders";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 
 
 const Login = () => {
@@ -14,11 +15,15 @@ const Login = () => {
 
 
 
-    const captchaRef = useRef(null);
+
     const [disabled, setDisabled] = useState(true);
 
 
-    const {signIn} = useContext(AuthContext);
+    const { signIn } = useContext(AuthContext);
+
+    const navigate = useNavigate();
+    const location = useLocation();
+    const from = location.state?.from?.pathname || "/";
 
     useEffect(() => {
         loadCaptchaEnginge(6);
@@ -34,14 +39,25 @@ const Login = () => {
         const password = form.password.value;
         console.log(email, password);
         signIn(email, password)
-        .then(result => {
-            const user = result.user;
-            console.log(user);
-        })
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+                Swal.fire({
+                    position: "top-center",
+                    icon: "success",
+                   
+                    title: "Alhamdulillah  Your Login Succesful.",
+                    
+                    showConfirmButton: false,
+                    timer: 5000
+                });
+                navigate(from, { replace: true });
+
+            })
     }
 
-    const handleValidateCaptcha = () => {
-        const user_captcha_value = captchaRef.current.value;
+    const handleValidateCaptcha = (e) => {
+        const user_captcha_value = e.target.value;
         if (validateCaptcha(user_captcha_value)) {
             setDisabled(false);
 
@@ -59,32 +75,32 @@ const Login = () => {
             <Helmet>
                 <title>Islamic Center | Login</title>
             </Helmet>
-           
-           
-           
-      
-      
-      
 
-      
 
-      
+
+
+
+
+
+
+
+
 
             <div className="">
 
-              
-              
-              
-              
-              
-              
-               
-               
+
+
+
+
+
+
+
+
                 <div className="hero min-h-screen bg-black ">
-                   
-                   
-                   
-                   
+
+
+
+
 
                     <div className="hero-content flex-col md:flex-row-reverse">
 
@@ -121,12 +137,12 @@ const Login = () => {
 
 
                                     </label>
-                                    <input type="text" ref={captchaRef} name="captcha"
+                                    <input onBlur={handleValidateCaptcha} type="text" name="captcha"
                                         placeholder="type the captcha above" className="input 
                                       input-bordered border-b-4 bg-orange-300 "
                                         required />
 
-                                    <button onClick={handleValidateCaptcha} className="btn btn-outline btn-xs mt-5 font-bold">VALIDATE</button>
+
 
 
 
@@ -139,7 +155,7 @@ const Login = () => {
 
                                 </div>
                             </form>
-                            <p>New Here? <Link to="/signup">Create an Account</Link></p>
+                            <p className="ml-16 -mt-5 mb-10 italic font-bold">New Here? <Link className="text-orange-400" to="/signup">Create an Account</Link></p>
                         </div>
 
 
