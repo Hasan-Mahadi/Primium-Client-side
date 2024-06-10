@@ -62,7 +62,7 @@ import PriveteRoutse from "./PriveteRoutse";
         },
         {
           path: 'prodcust',
-          element: <PriveteRoutse><Products></Products></PriveteRoutse>
+          element: <Products></Products>
         },
         {
           path: 'secret',

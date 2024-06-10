@@ -3,12 +3,14 @@ import Header from "../Header";
 import './Navbar.css';
 import { useContext } from "react";
 import { AuthContext } from "../../../providers/Authproviders";
+import { FaShoppingCart } from "react-icons/fa";
+import useCart from "../../../hooks/useCart";
 
 
 const Navbar = () => {
 
     const { user, logout } = useContext(AuthContext);
-
+    const [cart] = useCart();
     const handleLogOut = () => {
         logout()
         .then(() => {})
@@ -37,9 +39,21 @@ const Navbar = () => {
             </li>
 
             <li className="font-bold"><Link to="projects">Projects</Link></li>
-            <li className="font-bold"><Link to="secret">sontact</Link></li>
+            <li className="font-bold"><Link to="contact">Contact</Link></li>
+            <li>
+                <Link to="/">
+                    
+                    
+                    <button className="btn -mt-4">
+                      <FaShoppingCart className=" "></FaShoppingCart>
+                        <div className="badge badge-secondary  ">+{cart.length}</div>
+                    </button>
+                </Link>
+            </li>
 
 
+
+            
         </>
     return (
         <>
@@ -71,7 +85,8 @@ const Navbar = () => {
 
                     {
                         user ? <>
-                        <span>{user?.displayName}</span>
+                        {/* <span>{user?.displayName}</span> */}
+
                             <button onClick={handleLogOut} className="btn btn-ghost  btn btn-outline  btn-accent  bg-green font-bold text-xl">logOut</button>
                         </>: <>
                                 <Link className="btn btn-ghost  btn btn-outline btn-accent  bg-black font-bold text-xl " to="logins">Login</Link>
