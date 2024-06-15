@@ -41,7 +41,7 @@ const Navbar = () => {
             <li className="font-bold"><Link to="projects">Projects</Link></li>
             <li className="font-bold"><Link to="contact">Contact</Link></li>
             <li>
-                <Link to="/">
+                <Link to="/dashboard/cart">
                     
                     
                     <button className="btn -mt-4">

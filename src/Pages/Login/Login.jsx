@@ -5,6 +5,8 @@ import { loadCaptchaEnginge, LoadCanvasTemplate, validateCaptcha } from 'react-s
 import { AuthContext } from "../../providers/Authproviders";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
+import SocialLogin from "../../Sociallogin/SocialLogin";
+
 
 
 const Login = () => {
@@ -155,16 +157,21 @@ const Login = () => {
 
                                 </div>
                             </form>
-                            <p className="ml-16 -mt-5 mb-10 italic font-bold">New Here? <Link className="text-orange-400" to="/signup">Create an Account</Link></p>
+                            <p className="ml-16 -mt-5  italic font-bold">New Here? <Link className="text-orange-400" to="/signup">Create an Account</Link></p>
+                            <div className="divider">OR</div>
+                            <SocialLogin></SocialLogin>
                         </div>
 
 
 
 
-
+              
 
 
                     </div>
+                  
+            
+                   
                 </div>
             </div>
         </div>

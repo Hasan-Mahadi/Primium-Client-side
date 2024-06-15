@@ -5,9 +5,12 @@ import { useForm } from "react-hook-form";
 import { AuthContext } from "../../providers/Authproviders";
 import { Link, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
+import useAxiosPublic from "../../hooks/useAxiosPublic";
+import SocialLogin from "../../Sociallogin/SocialLogin";
 
 
 const SignUp = () => {
+    const axiosPublic = useAxiosPublic();
 
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
@@ -17,25 +20,37 @@ const SignUp = () => {
 
 
     const onSubmit = data => {
-        console.log(data);
+        // console.log(data);
+
         createUser(data.email, data.password)
             .then(result => {
                 const loggedUser = result.user;
                 console.log(loggedUser);
                 updateuserProfile(data.name, data.photo)
                     .then(() => {
-                        console.log('user profile info updated')
-                        reset();
-                        Swal.fire({
-                            position: "top-center",
-                            icon: "success",
+                        // console.log('user profile info updated')
+                        // create user entry in the database
+                        const userInfo = {
+                            name: data.name,
+                            email: data.email
+                        }
+                        axiosPublic.post('/users', userInfo)
+                            .then(res => {
+                                if (res.data.insertedId) {
+                                    console.log('user added to the database')
 
-                            title: "Alhamdulillah Sign-Up SuccessFully!!!",
+                                    reset();
+                                    Swal.fire({
+                                        position: "top-center",
+                                        icon: "success",
+                                        title: "Alhamdulillah Sign-Up SuccessFully!!!",
+                                        showConfirmButton: false,
+                                        timer: 3000
+                                    });
+                                    navigate('/');
 
-                            showConfirmButton: false,
-                            timer: 5000
-                        });
-                        navigate('/');
+                                }
+                            });
 
                     })
                     .catch(error => console.log(error));
@@ -122,6 +137,7 @@ const SignUp = () => {
                                         className="text-orange-400 ml-3" to="/logins">
                                         Login
                                     </Link></p>
+                                    <SocialLogin></SocialLogin>
                             </form>
                         </div>
                     </div>

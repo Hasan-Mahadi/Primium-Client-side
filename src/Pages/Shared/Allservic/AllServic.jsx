@@ -9,7 +9,7 @@ import useAuth from "../../../hooks/useAuth";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-import axios from "axios";
+
 import useAxiosSEcour from "../../../hooks/useAxiosSEcour";
 import useCart from "../../../hooks/useCart";
 
